@@ -4,10 +4,14 @@ function depositCalculator(input) {
   let interestRate = Number(input[2]);
 
   let extraMoneyForOneYear = depositAmount * (interestRate / 100);
+
   let extraMoneyForOneMonth = extraMoneyForOneYear / 12;
-  console.log(extraMoneyForOneMonth);
+
+  let totalExtraMoney = extraMoneyForOneMonth * termDeposit;
+
+  console.log(depositAmount + totalExtraMoney);
 
 
 }
 
-depositCalculator(["200", "3", "5.7"]);
+depositCalculator(["2350", "6", "7"]);
