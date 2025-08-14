@@ -1,9 +1,7 @@
-function greenGarten(input) {
-  let qm = input[0];
-  let priceQm = qm * 7.61;
-  let discountValue = 0.18;
-  let discountPrice = discountValue * priceQm;
-  let sumTotal = priceQm - discountPrice;
-  console.log(`The final price is ${sumTotal} lv.\nThe discount is: ${discountPrice} lv.`);
+function usdToBgn(input) {
+  let usd = Number(input[0]);
+  let fixing = 1.79549;
+  let bgn = usd * fixing;
+  console.log(bgn);
 }
-greenGarten(["150"]);
+usdToBgn(["12.5"]);
